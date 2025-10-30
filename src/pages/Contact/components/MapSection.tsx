@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { MapPin, Navigation } from 'lucide-react';
+import React from 'react';
+import { Navigation } from 'lucide-react';
 
 export const MapSection: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenMaps = () => {
     window.open(
