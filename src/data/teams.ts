@@ -1,7 +1,7 @@
 import type { TeamMember } from '../types';
 
 export const teamMembers: TeamMember[] = [
-  { name: 'Ibu Suharni', role: 'Founder & Head Baker', image: '👩‍🍳' },
-  { name: 'Mas Budi', role: 'Operations Manager', image: '👨‍💼' },
-  { name: 'Mbak Sari', role: 'Marketing & Sales', image: '👩‍💻' },
+  { name: 'Ibu Suharni', role: 'Pendiri', image: '👩‍🍳' },
+  { name: 'Bapak Suyatno', role: 'Kepala Produksi', image: '👨‍💼' },
+  { name: 'Mbak Sari', role: 'Marketing Digital', image: '👩‍💻' },
 ];

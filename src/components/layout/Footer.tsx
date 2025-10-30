@@ -63,7 +63,7 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                     <button
                       onClick={() => onNavigate(item.name)}
                       className={`w-full text-left transition-colors duration-300 flex items-center gap-2 group focus:outline-none ${currentPage === item.name
-                        ? 'text-amber-400' // AKTIF
+                        ? 'text-amber-400'
                         : 'text-gray-400 hover:text-amber-400'
                         }`}
                     >
@@ -115,7 +115,7 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 >
                   <span className="block">+62 856-4341-5298</span>
                   <span className="text-xs text-amber-400 group-hover:text-amber-300">
-                    Admin 2 (Pemesanan)
+                    Admin 2 (Informasi)
                   </span>
                 </a>
               </li>
