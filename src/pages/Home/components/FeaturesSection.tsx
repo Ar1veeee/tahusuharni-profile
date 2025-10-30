@@ -21,7 +21,7 @@ const features = [
     lucideIcon: Users,
     title: 'Bisnis Keluarga',
     desc: 'Resep turun temurun yang autentik',
-    detail: 'Sejak 1985 melayani Anda',
+    detail: 'Sejak 1995 melayani Anda',
     color: 'from-blue-500 to-cyan-500',
     bgColor: 'from-blue-50 to-cyan-50'
   },
