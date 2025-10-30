@@ -9,7 +9,7 @@ export const StorySection: React.FC = () => {
         </h2>
         <div className="space-y-5 text-lg text-gray-700 leading-relaxed">
           <p>
-            Dimulai dari <strong className="text-amber-600">dapur rumah tahun 2018</strong>, kami cuma bikin masakan buat keluarga. Tapi satu gigitan, satu cerita, satu pelanggan — kini kami udah kirim ke <strong>seluruh Indonesia</strong>.
+            Dimulai dari <strong className="text-amber-600">dapur rumah tahun 1985</strong>, kami cuma bikin masakan buat keluarga. Tapi satu gigitan, satu cerita, satu pelanggan — kini kami udah kirim ke <strong>seluruh Indonesia</strong>.
           </p>
           <p>
             Setiap masakan dibuat pakai <em>resep nenek</em> + <strong>bahan premium</strong>. Karena buat kami, <span className="text-orange-600 font-bold">masakan khas bukan cuma makanan — tapi momen</span>.

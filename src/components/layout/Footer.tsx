@@ -28,7 +28,7 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
               Tahu Suharni
             </h2>
             <p className="text-gray-400 leading-relaxed">
-              Kelezatan tahu premium yang dibuat dengan cinta dan resep turun temurun sejak 1985.
+              Kelezatan tahu premium yang dibuat dengan cinta dan resep turun temurun sejak 1995.
             </p>
             <div className="flex gap-3 pt-2">
               <a
