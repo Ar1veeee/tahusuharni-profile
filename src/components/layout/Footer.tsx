@@ -24,7 +24,7 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
           {/* Brand Section */}
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
               Tahu Suharni
             </h2>
             <p className="text-gray-400 leading-relaxed">
@@ -54,21 +54,21 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-amber-400">Menu Cepat</h3>
+            <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">Menu Cepat</h3>
             <ul className="space-y-3">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <li key={item.name}>
+                  <li key={item.name} className='flex gap-2 items-center'>
+                    <Icon size={18} className="flex-shrink-0" />
                     <button
                       onClick={() => onNavigate(item.name)}
                       className={`w-full text-left transition-colors duration-300 flex items-center gap-2 group focus:outline-none ${currentPage === item.name
-                        ? 'text-amber-400'
-                        : 'text-gray-400 hover:text-amber-400'
+                        ? 'text-amber-600'
+                        : 'text-gray-400 hover:text-amber-600'
                         }`}
                     >
-                      <Icon size={18} className="flex-shrink-0" />
-                      <span className="inline-block w-0 group-hover:w-2 h-0.5 bg-amber-400 transition-all duration-300"></span>
+                      <span className="inline-block w-0 group-hover:w-2 h-0.5 bg-gradient-to-r from-amber-600 to-orange-500 transition-all duration-300"></span>
                       <span>{item.name}</span>
                     </button>
                   </li>
@@ -79,18 +79,18 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-amber-400">Hubungi Kami</h3>
+            <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">Hubungi Kami</h3>
             <ul className="space-y-4">
 
               {/* Alamat */}
               <li className="flex items-start gap-3 text-gray-400">
-                <MapPin size={20} className="text-amber-400 flex-shrink-0 mt-1" />
+                <MapPin size={20} className="text-white flex-shrink-0 mt-1" />
                 <span>Parangjoro Rt 01 Rw 03 Grogol, Sukoharjo</span>
               </li>
 
               {/* WhatsApp Admin 1 */}
               <li className="flex items-center gap-3">
-                <Phone size={20} className="text-amber-400 flex-shrink-0" />
+                <Phone size={20} className="text-white flex-shrink-0" />
                 <a
                   href="https://wa.me/6288980982376"
                   target="_blank"
@@ -98,7 +98,7 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                   className="text-gray-300 hover:text-white transition-colors duration-300 font-medium group"
                 >
                   <span className="block">+62 889-8098-2376</span>
-                  <span className="text-xs text-amber-400 group-hover:text-amber-300">
+                  <span className="text-xs text-amber-600 group-hover:text-amber-500">
                     Admin 1 (Pemesanan)
                   </span>
                 </a>
@@ -106,7 +106,7 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
               {/* WhatsApp Admin 2 */}
               <li className="flex items-center gap-3">
-                <Phone size={20} className="text-amber-400 flex-shrink-0" />
+                <Phone size={20} className="text-white flex-shrink-0" />
                 <a
                   href="https://wa.me/6285643415298"
                   target="_blank"
@@ -114,7 +114,7 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                   className="text-gray-300 hover:text-white transition-colors duration-300 font-medium group"
                 >
                   <span className="block">+62 856-4341-5298</span>
-                  <span className="text-xs text-amber-400 group-hover:text-amber-300">
+                  <span className="text-xs text-amber-600 group-hover:text-amber-500">
                     Admin 2 (Informasi)
                   </span>
                 </a>
@@ -122,7 +122,7 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
               {/* Email */}
               <li className="flex items-center gap-3 text-gray-400">
-                <Mail size={20} className="text-amber-400 flex-shrink-0" />
+                <Mail size={20} className="text-white flex-shrink-0" />
                 <a href="mailto:nuranggrainii03@gmail.com" className="hover:text-white transition-colors">
                   nuranggrainii03@gmail.com
                 </a>
@@ -132,10 +132,10 @@ export const Footer: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
           {/* Business Hours */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-amber-400">Jam Operasional</h3>
+            <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">Jam Operasional</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <Clock size={20} className="text-amber-400 flex-shrink-0 mt-1" />
+                <Clock size={20} className="text-white flex-shrink-0 mt-1" />
                 <div className="text-gray-400">
                   <p className="font-semibold text-white">Senin - Sabtu</p>
                   <p>06.00 - 19.00 WIB</p>
