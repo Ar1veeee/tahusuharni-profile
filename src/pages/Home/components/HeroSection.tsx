@@ -23,16 +23,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Masakan premium buatan rumahan dengan resep turun temurun dan bahan pilihan terbaik
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mx-20">
             <button
               onClick={() => onNavigate('Produk')}
-              className="px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-500 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              className="px-8 py-4 min-w-[250px] bg-gradient-to-r from-amber-600 to-orange-500 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
             >
               Lihat Produk
             </button>
             <button
               onClick={() => onNavigate('Kontak')}
-              className="px-8 py-4 bg-white text-amber-600 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-amber-600"
+              className="px-8 py-4 min-w-[250px] bg-white text-amber-600 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-amber-600"
             >
               Hubungi Kami
             </button>
