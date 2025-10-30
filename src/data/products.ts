@@ -23,7 +23,7 @@ export const products: Product[] = [
   { 
     id: 3, 
     name: 'Tempe Buntelan Daun Pisang', 
-    price: 500, 
+    price: 6000, 
     image: tempe,
     description: 'tempe tradisional dibungkus daun pisang segar untuk menjaga aroma alami dan cita rasa khas Jawa. diproses dengan cara fermentasi alami menggunakan ragi pilihan', 
     type: 'Tempe'
