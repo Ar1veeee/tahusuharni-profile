@@ -5,7 +5,7 @@ import { TeamSection } from './components/TeamSection';
 
 export const AboutPage: React.FC = () => {
   return (
-    <div className="min-h-screen pt-20 pb-16 px-4 bg-gradient-to-b from-amber-50/30 to-white">
+    <div className="min-h-screen pt-16 pb-24 px-4 bg-gradient-to-br from-amber-50 via-orange-50 to-pink-50 overflow-hidden">
       <div className="max-w-6xl mx-auto mt-10">
 
         {/* Hero Title */}
