@@ -15,7 +15,7 @@ export const VisionMission: React.FC = () => {
             <h3 className="text-2xl font-bold text-amber-800">Visi</h3>
           </div>
           <p className="text-gray-700 text-lg leading-relaxed">
-            Jadi <strong>#1 kue kering</strong> di Indonesia yang selalu bikin orang bilang: <em>"Ini sih beda!"</em>
+            Jadi <strong>#1 masakan tradisional</strong> di Indonesia yang selalu bikin orang bilang: <em>"Ini sih beda!"</em>
           </p>
         </div>
 
