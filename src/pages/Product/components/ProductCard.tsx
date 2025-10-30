@@ -9,6 +9,7 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [isLiked, setIsLiked] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   return (
     <div className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
@@ -34,7 +35,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </span>
       </div>
 
-      {/* Image Section with Overlay */}
+      {/* Image Section */}
       <div className="relative h-64 bg-gradient-to-br from-amber-100 via-orange-100 to-yellow-100 overflow-hidden">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -45,11 +46,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {/* Hover Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
         
-        {/* Product Image/Emoji */}
-        <div className="relative h-full flex items-center justify-center">
-          <div className="text-9xl transform group-hover:scale-110 transition-transform duration-500 group-hover:rotate-6">
-            {product.image}
-          </div>
+        {/* Product Image with Lazy Load & Fallback */}
+        <div className="relative h-full flex items-center justify-center p-8">
+          {imageError ? (
+            <div className="text-6xl">Tahu</div>
+          ) : (
+            <img
+              src={product.image}
+              alt={product.name}
+              loading="lazy"
+              onError={() => setImageError(true)}
+              className="max-h-full max-w-full object-contain drop-shadow-xl 
+                       transform group-hover:scale-110 group-hover:rotate-3 
+                       transition-all duration-500"
+            />
+          )}
         </div>
       </div>
 
@@ -75,7 +86,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
           <div className="text-right">
             <p className="text-xs text-emerald-600 font-semibold">• Stok Tersedia</p>
-            <p className="text-xs text-gray-500"> </p>
           </div>
         </div>
 
