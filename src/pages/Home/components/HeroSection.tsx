@@ -14,19 +14,19 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold font-sans text-gray-900 mb-6 leading-tight">
             Kelezatan yang
             <span className="block bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
               Dibuat dengan Cinta
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto font-medium font-sans">
             Masakan premium buatan rumahan dengan resep turun temurun dan bahan pilihan terbaik
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mx-20">
             <button
               onClick={() => onNavigate('Produk')}
-              className="px-8 py-4 min-w-[250px] bg-gradient-to-r from-amber-600 to-orange-500 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              className="px-8 py-4 min-w-[250px] bg-gradient-to-r from-amber-600 to-orange-500 text-white rounded-full font-semibold font-sans text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
             >
               Lihat Produk
             </button>

@@ -80,19 +80,29 @@ export const FeaturesSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             return (
               <div
                 key={idx}
-                className="group relative animate-fade-in-up"
+                className="group relative animate-fade-in-up h-full"
                 style={{ animationDelay: `${idx * 150}ms` }}
               >
                 {/* Glow Effect */}
                 <div className={`absolute -inset-0.5 bg-gradient-to-r ${item.color} rounded-3xl opacity-0 group-hover:opacity-20 blur transition duration-500`}></div>
 
-                {/* Card */}
-                <div className={`relative bg-gradient-to-br ${item.bgColor} p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 border-white`}>
+                {/* Card — h-full + flex col */}
+                <div className={`
+          relative h-full bg-gradient-to-br ${item.bgColor} p-8 rounded-3xl 
+          shadow-lg hover:shadow-2xl transition-all duration-500 
+          transform hover:-translate-y-3 border-2 border-white
+          flex flex-col justify-between
+        `}>
 
                   {/* Icon Container */}
                   <div className="relative mb-6">
                     <div className="absolute inset-0 bg-white rounded-2xl blur opacity-50"></div>
-                    <div className={`relative w-20 h-20 mx-auto bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-500 shadow-xl`}>
+                    <div className={`
+              relative w-20 h-20 mx-auto bg-gradient-to-br ${item.color} 
+              rounded-2xl flex items-center justify-center 
+              transform group-hover:rotate-6 group-hover:scale-110 
+              transition-all duration-500 shadow-xl
+            `}>
                       <IconComponent size={36} className="text-white" />
                     </div>
                     {/* Floating Icon */}
@@ -101,21 +111,25 @@ export const FeaturesSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
                     </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="text-center space-y-3">
+                  {/* Content — flex-grow */}
+                  <div className="text-center space-y-3 flex-grow flex flex-col justify-center">
                     <h3 className="text-2xl font-black text-gray-900 group-hover:scale-105 transition-transform">
                       {item.title}
                     </h3>
                     <p className="text-gray-700 font-medium leading-relaxed">
                       {item.desc}
                     </p>
-                    <div className={`inline-flex items-center gap-1 px-3 py-1.5 bg-white rounded-full text-xs font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent shadow-sm`}>
+                    <div className={`
+              inline-flex items-center gap-1 px-3 py-1.5 bg-white rounded-full 
+              text-xs font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent 
+              shadow-sm mx-auto
+            `}>
                       <TrendingUp size={12} />
                       {item.detail}
                     </div>
                   </div>
 
-                  {/* Bottom Badge */}
+                  {/* Bottom Badge — tetap di bawah */}
                   <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500">
                     <div className={`bg-gradient-to-r ${item.color} text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap`}>
                       Terpercaya
